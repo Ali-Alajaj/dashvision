@@ -11,6 +11,12 @@ nav {
   align-items: center;
   padding-top: 15px;
   z-index: 5;
+  overflow: hidden;
+  transition: width 0.15s;
+}
+
+.show-mobile-nav {
+  width: 212px;
 }
 
 .logo {
@@ -39,10 +45,22 @@ nav {
   margin-top: 20px;
 }
 
+.invisible-logo {display: none;}
+
+nav .mobile-search-nav-page {display: none;}
+
 .pages-section img {height: 30px;}
 
 @media (max-width: 806px) {
+  .logo {display: none;}
+
   nav {
-    display: none;
+    padding-top: 70px;
+    width: 0;
+    z-index: 10;
   }
+}
+
+@media (max-width: 479px) {
+  nav .mobile-search-nav-page {display: flex;}
 }
