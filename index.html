@@ -14,7 +14,7 @@
 <body>
   <header>
     <div class="header-left-section">
-      <img class="hamburger-menu-icon header-icon" src="images/icons/hamburger-menu-icon.png">
+      <img class="hamburger-menu-icon header-icon js-hamburger-menu" src="images/icons/hamburger-menu-icon.png">
       <img class="mobile-logo" src="images/logos/logo.jpg">
       <img class="header-icon search-icon" src="images/icons/search-icon.png">
     </div>
@@ -25,9 +25,13 @@
   </header>
   <nav>
     <div class="logo-container">
-      <img class="logo" src="images/logos/logo.jpg">
+      <img class="logo js-logo" src="images/logos/logo.jpg">
     </div>
     <div class="pages-section">
+      <div class="mobile-search-nav-page">
+        <p>Search</p>
+        <img src="images/icons/search-icon.png">
+      </div>
       <div class="nav-page">
         <p>Dashboard</p>
         <img src="images/icons/dashboard-icon.png">
@@ -58,28 +62,28 @@
           <p>Total Users</p>
           <img src="images/icons/users-icon2.png">
         </div>
-        <p class="card-quantity">3546</p>
+        <p class="card-quantity js-card-data" data-data-type="totalUsers">3546</p>
       </div>
       <div class="main-card total-orders-card">
         <div>
           <p>Total Orders</p>
           <img src="images/icons/orders-icon2.png">
         </div>
-        <p class="card-quantity">233</p>
+        <p class="card-quantity js-card-data" data-data-type="totalOrders">233</p>
       </div>
       <div class="main-card revenue-card">
         <div>
           <p>Revenue</p>
           <img src="images/icons/revenue-icon.png">
         </div>
-        <p class="card-quantity">$9621.75</p>
+        <p class="card-quantity js-card-data" data-data-type="revenueCents">$9621.75</p>
       </div>
       <div class="main-card conversion-rate-card">
         <div>
           <p>Conversion Rate</p>
           <!-- <img src="images/icons/revenue-icon.png"> -->
         </div>
-        <p class="card-quantity">6.57%</p>
+        <p class="card-quantity js-card-data" data-data-type="conversionRate">6.57%</p>
       </div>
     </section>
     <section class="charts-section">
@@ -310,5 +314,7 @@
       
     </section>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
